@@ -10,7 +10,6 @@
 		shells = with pkgs; [ zsh fish ];
 		loginShell = pkgs.fish;
 		loginShellInit = ''
-				export KEYID=0x212B32E0CA23E526
 				export GPG_TTY=$tty
 				export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 				gpgconf --launch gpg-agent
