@@ -45,6 +45,8 @@
 			"fbreader"
 			"anki"
 			"vscodium"
+			"discord"
+			"zoom"
 		];
 	};
 	system.defaults = {
