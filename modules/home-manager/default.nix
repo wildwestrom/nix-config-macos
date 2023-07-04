@@ -183,6 +183,7 @@
             file-types = ["nix"];
             roots = ["flake.lock"];
             indent = {
+              tab-width = 2;
               unit = "\t";
             };
             formatter = {
