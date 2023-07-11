@@ -127,7 +127,7 @@
     ripgrep.enable = true;
     kitty = {
       enable = true;
-      shellIntegration.enableFishIntegration = true;
+      # shellIntegration.enableFishIntegration = true;
       font = {
         name = "JetBrainsMono Nerd Font";
         size = 14;
