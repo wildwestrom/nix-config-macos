@@ -63,7 +63,6 @@
       nixconf = "$EDITOR ~/nix-config";
       su = "su -s /bin/fish";
       proc = "ps u | head -n1 && ps aux | rg -v '\\srg\\s-\\.' | rg";
-      inx = "MOZ_ENABLE_WAYLAND=0 GDK_BACKEND=X11 QT_QPA_PLATFORM=xcb WINIT_UNIX_BACKEND=x11";
       mpa = "mpv --no-video";
       ytdl = "yt-dlp -P ~/Downloads";
       gcd1 = "git clone --depth 1";
