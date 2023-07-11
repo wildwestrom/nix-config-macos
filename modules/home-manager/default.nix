@@ -23,6 +23,7 @@
       tree-sitter
       luarocks
       python3
+      tree
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let

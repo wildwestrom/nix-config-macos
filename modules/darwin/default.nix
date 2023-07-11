@@ -47,6 +47,9 @@
       "vscodium"
       "discord"
       "zoom"
+      "gimp"
+      "inkscape"
+      "pdfsam-basic"
     ];
   };
   system.defaults = {
