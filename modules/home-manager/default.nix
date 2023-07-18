@@ -10,7 +10,9 @@
       lazygit
       tokei
       rustup
+      lldb_16
       fd
+      jq
       neovim
       alejandra
       yt-dlp
@@ -25,6 +27,8 @@
       python3
       tree
       ghostscript
+      rename
+      pandoc
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let

@@ -50,6 +50,8 @@
       "gimp"
       "inkscape"
       "pdfsam-basic"
+      "obsidian"
+      "mullvadvpn"
     ];
   };
   system.defaults = {
