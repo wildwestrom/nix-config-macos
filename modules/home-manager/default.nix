@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   config,
   ...
@@ -127,7 +128,14 @@
       enable = true;
       enableFishIntegration = true;
     };
-    ripgrep.enable = true;
+    ripgrep = {
+      enable = true;
+      arguments = [
+        "--hidden"
+        "--glob=!.git/*"
+        "--smart-case"
+      ];
+    };
     kitty = {
       enable = true;
       # shellIntegration.enableFishIntegration = true;
@@ -154,6 +162,15 @@
           true-color = true;
           color-modes = true;
           lsp.display-messages = true;
+          auto-pairs = {
+            "(" = ")";
+            "{" = "}";
+            "[" = "]";
+            "\"" = "\"";
+            "'" = "'";
+            "<" = ">";
+            "`" = "`";
+          };
         };
       };
       languages = {
@@ -181,6 +198,28 @@
                   };
                 };
               };
+            };
+            debugger = {
+              command = "${inputs.self.packages.${pkgs.stdenv.hostPlatform.system}.debugserver}/bin/debugserver";
+              name = "debugserver";
+              port-arg = "--port {}";
+              transport = "tcp";
+              templates = [
+                {
+                  name = "binary";
+                  request = "launch";
+                  completion = [
+                    {
+                      completion = "filename";
+                      name = "binary";
+                    }
+                  ];
+                  args = {
+                    program = "{0}";
+                    runInTerminal = true;
+                  };
+                }
+              ];
             };
           }
           {

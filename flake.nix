@@ -20,6 +20,9 @@
     darwin,
     ...
   } @ inputs: {
+    packages = nixpkgs.lib.genAttrs ["aarch64-darwin" "x86_64-darwin"] (system: {
+      debugserver = nixpkgs.legacyPackages.${system}.callPackage ./pkgs/debugserver {};
+    });
     darwinConfigurations = {
       "Mains-MacBook-Pro" = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
@@ -38,6 +41,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               users.main.imports = [./modules/home-manager];
+              extraSpecialArgs = {inherit inputs;};
             };
           }
         ];
