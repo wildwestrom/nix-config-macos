@@ -11,7 +11,8 @@
       lazygit
       tokei
       rustup
-      lldb_16
+      lldb
+      gh
       fd
       jq
       neovim
@@ -72,8 +73,7 @@
       ytdl = "yt-dlp -P ~/Downloads";
       gcd1 = "git clone --depth 1";
     };
-    # file.".gnupg/gpg-agent.conf".text = import ./gpg-agent.conf.nix {};
-    # file.".gnupg/gpg.conf".text = import ./gpg.conf.nix {};
+    enableNixpkgsReleaseCheck = true;
   };
   programs = {
     gpg = {
@@ -200,8 +200,10 @@
               };
             };
             debugger = {
-              command = "${inputs.self.packages.${pkgs.stdenv.hostPlatform.system}.debugserver}/bin/debugserver";
-              name = "debugserver";
+              # command = "${inputs.self.packages.${pkgs.stdenv.hostPlatform.system}.debugserver}/bin/debugserver";
+              # name = "debugserver";
+              command = "${pkgs.lldb}/bin/lldb-vscode";
+              name = "lldb-vscode";
               port-arg = "--port {}";
               transport = "tcp";
               templates = [
