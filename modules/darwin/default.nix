@@ -52,6 +52,7 @@
       "pdfsam-basic"
       "obsidian"
       "mullvadvpn"
+      "db-browser-for-sqlite"
     ];
   };
   system.defaults = {
