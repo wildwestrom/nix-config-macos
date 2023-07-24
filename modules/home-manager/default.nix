@@ -65,7 +65,6 @@
       htop = "btm --color=default";
       grep = "rg";
       cloc = "tokei";
-      watch = "watch -c";
       nixconf = "$EDITOR ~/nix-config";
       su = "su -s /bin/fish";
       proc = "ps u | head -n1 && ps aux | rg -v '\\srg\\s-\\.' | rg";
