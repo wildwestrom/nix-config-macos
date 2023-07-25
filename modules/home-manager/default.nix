@@ -31,6 +31,7 @@
       rename
       pandoc
       python311
+      watch
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let
@@ -71,6 +72,7 @@
       mpa = "mpv --no-video";
       ytdl = "yt-dlp -P ~/Downloads";
       gcd1 = "git clone --depth 1";
+      watch = "watch -c";
     };
     enableNixpkgsReleaseCheck = true;
   };
