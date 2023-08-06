@@ -53,6 +53,7 @@
       "obsidian"
       "mullvadvpn"
       "db-browser-for-sqlite"
+      "docker"
     ];
   };
   system.defaults = {
