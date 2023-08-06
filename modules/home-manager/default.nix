@@ -32,6 +32,9 @@
       pandoc
       python311
       watch
+      act
+      zellij
+      ffmpeg
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let
@@ -123,7 +126,10 @@
     };
     fish = {
       enable = true;
-      interactiveShellInit = "set fish_greeting # Disable greeting\n";
+      interactiveShellInit = ''
+        set fish_greeting # Disable greeting
+        fish_vi_key_bindings # use vi bindings
+      '';
     };
     zoxide = {
       enable = true;
@@ -146,6 +152,7 @@
       };
       settings = {
         confirm_os_window_close = 0; # Disable
+        macos_option_as_alt = true;
       };
     };
     zathura.enable = true;
