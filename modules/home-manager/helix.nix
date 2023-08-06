@@ -60,8 +60,6 @@
               };
             };
             debugger = {
-              # command = "${inputs.self.packages.${pkgs.stdenv.hostPlatform.system}.debugserver}/bin/debugserver";
-              # name = "debugserver";
               command = "${pkgs.lldb}/bin/lldb-vscode";
               name = "lldb-vscode";
               port-arg = "--port {}";
