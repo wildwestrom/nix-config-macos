@@ -36,6 +36,9 @@
       zellij
       ffmpeg
       nodePackages_latest.markdownlint-cli
+      typst
+      typst-fmt
+      typst-lsp
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let
