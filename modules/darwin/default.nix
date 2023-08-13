@@ -58,6 +58,7 @@
       "mullvadvpn"
       "db-browser-for-sqlite"
       "docker"
+      "steam"
     ];
   };
   system.defaults = {
