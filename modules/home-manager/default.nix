@@ -76,6 +76,7 @@
       ytdl = "yt-dlp -P ~/Downloads";
       gcd1 = "git clone --depth 1";
       watch = "watch -c";
+      lazyconf = "lazygit -p ~/nix-config/";
     };
     enableNixpkgsReleaseCheck = true;
   };
