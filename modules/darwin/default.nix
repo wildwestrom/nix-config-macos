@@ -27,7 +27,11 @@
     enable = true;
     caskArgs.no_quarantine = true;
     global = {brewfile = true;};
-    onActivation = {cleanup = "uninstall";};
+    onActivation = {
+      cleanup = "uninstall";
+      autoUpdate = true;
+      upgrade = true;
+    };
     casks = [
       "libreoffice"
       "obs"
