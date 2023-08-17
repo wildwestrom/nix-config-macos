@@ -39,6 +39,7 @@
       typst
       typst-fmt
       typst-lsp
+      pkg-config
     ];
     sessionPath = ["$HOME/.local/bin" "/usr/local/bin" "/run/current-system/sw/bin"];
     sessionVariables = let
