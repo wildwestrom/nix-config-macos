@@ -158,7 +158,7 @@
         name = "JetBrainsMono Nerd Font";
         size = 14;
       };
-      theme = "GitHub Light";
+      theme = "Atom One Light";
       settings = {
         confirm_os_window_close = 0; # Disable
         macos_option_as_alt = true;
@@ -174,6 +174,20 @@
       settings = {
         simplified_ui = false;
         pane_frames = false;
+        theme = "solarized-light";
+        themes.solarized-light = {
+          fg = [101 123 131];
+          bg = [253 246 227];
+          black = [7 54 66];
+          red = [220 50 47];
+          green = [133 153 0];
+          yellow = [181 137 0];
+          blue = [38 139 210];
+          magenta = [211 54 130];
+          cyan = [42 161 152];
+          white = [238 232 213];
+          orange = [203 75 22];
+        };
       };
     };
   };

@@ -15,7 +15,7 @@
     helix = {
       enable = true;
       settings = {
-        theme = "kanagawa";
+        theme = "onelight";
         editor = {
           line-number = "relative";
           auto-format = true;
