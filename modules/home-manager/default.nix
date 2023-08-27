@@ -158,6 +158,7 @@
         name = "JetBrainsMono Nerd Font";
         size = 14;
       };
+      theme = "GitHub Light";
       settings = {
         confirm_os_window_close = 0; # Disable
         macos_option_as_alt = true;
