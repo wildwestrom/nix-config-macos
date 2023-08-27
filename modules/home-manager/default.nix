@@ -33,7 +33,6 @@
       python311
       watch
       act
-      zellij
       ffmpeg
       nodePackages_latest.markdownlint-cli
       typst
