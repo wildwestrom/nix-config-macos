@@ -166,6 +166,13 @@
       enable = true;
       nix-direnv.enable = true;
     };
+    zellij = {
+      enable = true;
+      settings = {
+        simplified_ui = false;
+        pane_frames = false;
+      };
+    };
   };
   editorconfig = {
     enable = true;
